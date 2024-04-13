@@ -1,6 +1,6 @@
 import { NuxtPage } from '#build/components';
 <template>
-  <div>
+  <div class="bg-slate-100 h-screen">
     <NuxtPage />
   </div>
 </template>
