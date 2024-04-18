@@ -272,7 +272,7 @@ const formData = ref({
 });
 
 const closeDialog = () => {
-  isDialogOpen.value = false; // Update the isDialogOpen value
+  isDialogOpen.value = false;
   clearFormData();
 };
 
@@ -281,8 +281,8 @@ const saveEducationItem = () => {
   const newItem = { ...formData.value };
   educationItems.value.push(newItem);
   console.log("After pushing new item:", educationItems.value);
-  clearFormData(); // Clear form fields after saving
-  isDialogOpen.value = false; // Close the dialog after saving
+  clearFormData();
+  isDialogOpen.value = false;
 };
 
 const removeEducationItem = (index) => {
